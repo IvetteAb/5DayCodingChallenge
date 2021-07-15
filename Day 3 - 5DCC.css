@@ -1,0 +1,280 @@
+/*
+DAY 3
+
+- 1st challenge:  Meaningful structure
+
+Steps:
+
+
+1) Add your recipe name to the <title> element within the head.
+2) Within the < body > element, add the following elements:
+	- Add a <header> element. Within the header add the placeholder text " recipe name, image, description"
+	- Add two <section> elements.
+	- Within the first <section> add the placeholder text " ingredients list"
+	- Within the second <section> add the placeholder text " preparation list"
+	- Add a <footer> element. Within the footer add the placeholder text " copyright"
+*/
+
+
+/* Before: */
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<!-- Set the title here -->
+    <title></title>
+    
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+	<body>
+		<!-- Add your header here -->
+		
+		<!-- Add a section here -->
+		
+		<!-- Add a section here -->
+		
+		<!-- Add your footer here -->
+		
+
+		<script src="index.js"></script>
+	</body>
+</html>
+
+
+/* After: */
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<!-- Set the title here -->
+    <title>How to make chocolate chip muffins</title>
+    
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+	<body>
+		<!-- Add your header here -->
+		<header>
+		    recipe name,
+		    image,
+		    description
+		</header>
+		<!-- Add a section here -->
+		<section>
+		    ingredients list
+		</section>
+		<!-- Add a section here -->
+		<section>
+		    preperation list
+		</section>
+		<!-- Add your footer here -->
+		<footer>
+		    copyright
+		</footer>
+
+		<script src="index.js"></script>
+	</body>
+</html>
+
+
+/*
+- header --> contains recipe name, image & description
+- 2 sections
+- footer
+
+
+
+
+- 2nd challenge: items and order 1
+
+Steps:
+
+
+1) Remove the recipe name placeholder text and add an <h1> element to the <header> giving it your recipe name
+2) Remove the description placeholder text and add a <p> element to the <header> describing your recipe
+3) Remove the ingredients placeholder text and add a <h2> element to the first <section> . The heading text will be " ingredients"
+4) Remove the list placeholder text and add a <ul> element to the first <section>
+5) The <ul> should contain at least 4 <li> elements listing your recipe ingredients.
+*/
+
+
+/* Before: */
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- Add your recipe title here -->
+    <title>My Recipe</title>
+    
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+	<body>
+		
+		<header>
+			<!-- Add your <h1>  here -->
+			recipe name
+			<!-- we will add the image in a later challenge -->
+			image
+
+			<!-- Add your <p> here -->
+			description
+
+		</header>
+		
+		<section>
+			<!-- Add your <h2>  here -->
+			ingredients
+			<!-- Add your <ul> list here -->
+			list
+		</section>
+		
+		<section>
+			preparation
+			list
+		</section>
+		
+		<footer>
+			copyright
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
+
+
+/* After: */
+
+using recipe from: https://www.allrecipes.com/recipe/7906/chocolate-chip-muffins/ 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- Add your recipe title here -->
+    <title>How to make chocolate chip muffins</title>
+    
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+	<body>
+		
+		<header>
+			<!-- Add your <h1>  here -->
+			<h1>How to make chocolate chip muffins</h1>
+			<!-- we will add the image in a later challenge -->
+			image
+
+			<!-- Add your <p> here -->
+			<p>With this recipe you will make 12 amazing chocolate chip muffins!</p>
+
+		</header>
+		
+		<section>
+			<!-- Add your <h2>  here -->
+			<h2>ingredients</h2>
+			<!-- Add your <ul> list here -->
+			<ul>
+			    <li>2 cups all-purpose flour</li>
+			    <li>½ cup white sugar</li>
+			    <li>3 teaspoons baking powder</li>
+			    <li>½ teaspoon salt</li>
+			    <li>¾ cup milk</li>
+			    <li>⅓ cup vegetable oil</li>
+			    <li>1 egg</li>
+			    <li>¾ cup mini semi-sweet chocolate chips</li>
+			    <li>3 tablespoons white sugar</li>
+			    <li>2 tablespoons brown sugar</li>
+			    
+			</ul>
+		</section>
+		
+		<section>
+			preparation
+			list
+		</section>
+		
+		<footer>
+			copyright
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
+
+
+/*
+- 3rd challenge - items and order 2:
+
+Steps:
+
+
+1) Replace the recipe name, ingredients heading, and ingredients list with the text you added to the last challenge
+2) Add a <h2> element to the second <section>, and text of your choice
+3) Add an <ol> element to the second <section>
+4) The <ol> should contain at least 4 <li> element listing your recipe instructions.
+5) The <footer> element should contain a <p> element with the text: Copyright Me 2020
+*/
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- Add your recipe title here -->
+    <title>How to make chocolate chip muffins</title>
+    
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+	<body>
+		
+		<header>
+			<h1>How to make chocolate chip muffin</h1>
+			<!-- we will add the image in a later challenge -->
+			image
+
+			<p>With this recipe you will make 12 amazing chocolate chip muffins!</p>
+
+		</header>
+		
+		<section>
+			<h2>ingredients</h2>
+			<ul>
+			    <li>2 cups all-purpose flour</li>
+			    <li>½ cup white sugar</li>
+			    <li>3 teaspoons baking powder</li>
+			    <li>½ teaspoon salt</li>
+			    <li>¾ cup milk</li>
+			    <li>⅓ cup vegetable oil</li>
+			    <li>1 egg</li>
+			    <li>¾ cup mini semi-sweet chocolate chips</li>
+			    <li>3 tablespoons white sugar</li>
+			    <li>2 tablespoons brown sugar</li>
+			</ul>
+		</section>
+		
+		<section>
+			<!-- Add your <h2>  here -->
+			<h2>Instructions</h2>
+			<!-- Add your <ol> list here -->
+			<ol>
+			    <li>Heat oven to 205 degrees C (400 degrees F). Grease bottoms only of 12 muffin cups or line with baking cups.</li>
+			    <li>In a medium bowl, combine flour, 1/2 cup sugar, baking powder, chocolate chips, and salt; mix well. In a small bowl, combine milk, oil and egg; blend well. Add dry ingredients all at once; stir just until dry ingredients are moistened (batter will be lumpy.)</li>
+			    <li>Fill cups 2/3 full. Sprinkle tops of muffins before baking with a combination of 3 tablespoons sugar and 2 tablespoon brown sugar.</li>
+			    <li>Bake for 20 to 25 minutes or until toothpick inserted in center comes out clean. Cool 1 minute before removing from pan. Serve warm.</li>
+			    <li>Enjoy!</li>
+			</ol>
+		</section>
+		
+		<footer>
+			<!-- Add your <p>  here -->
+			<p>Copyright Me 2020</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>

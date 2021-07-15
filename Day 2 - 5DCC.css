@@ -1,0 +1,400 @@
+
+/*
+DAY 2 - CSS
+
+
+
+- 1st challenge - The world in colour: 
+
+Steps:
+
+
+1) Create an h1 style rule within the < style > element and below the body
+2) Set the  h1 rule color property to gold . - Note the US spelling of color -
+3) Create a p rule below the h1 rule
+4) Set the p rule color property to darkslategray
+5) Create an em rule below the p rule
+6) Set the em rule font-size property to 20px
+7) Create a strong rule below the em rule
+8) Set the strong rule font-size property to 24px
+*/
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day 2 Challenge 1</title>
+	<style>
+		body {
+			font-size: 14px;
+		}
+		/* place your style rules below this comment */
+		h1 {color: gold;}
+		p {color: darkslategray;}
+		em {font-size: 20px;}
+		strong {font-size: 24px;}
+		
+
+	</style>
+  </head>
+
+  <body>
+	  <!-- give these elements some style -->
+	  <h1>Why is HTML so successful?</h1>
+	  <p>Html is <em>easy</em></p>
+	  <p>Html is <strong>fun</strong></p>
+	  
+  </body>
+
+</html>
+
+
+
+/*
+- 2nd challenge - Putting on the style:
+
+Steps:
+
+
+1) Add a font-family property to the body rule. Set it to Arial
+2) Change the style declaration for the h1 rule and use the hex format for the color property. Set the color to #ffd700
+3) Add a text-transform property to the h1 rule. Set the value to uppercase .
+4) Add a color property to the em rule using the RGB format. Set the color to rgb(0, 128, 0)
+5) Add a color property to the strong rule using the RGB format. Set the color to rgb(0, 0, 0)
+*/
+
+
+/* Before: */
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day 2 Challenge 2</title>
+	<style>
+		body {
+			font-size: 14px;
+		}
+		h1 {
+			color: gold;
+		}
+		p {
+			color: darkslategray;
+		}
+		em {
+			font-size: 20px;
+		}
+		strong {
+			font-size: 24px;
+		}
+
+	</style>
+  </head>
+
+  <body>
+	  
+	  <h1>Why is HTML so successful?</h1>
+	  <p>Html is <em>easy</em></p>
+	  <p>Html is <strong>fun</strong></p>
+	  
+  </body>
+
+</html>
+
+
+
+/* After: */
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day 2 Challenge 2</title>
+	<style>
+		body {
+			font-size: 14px;
+			font-family: Arial;
+		}
+		h1 {
+			color: #ffd700;
+			text-transform: uppercase;
+		}
+		p {
+			color: darkslategray;
+		}
+		em {
+			font-size: 20px;
+			color: rgb(0, 128, 0);
+		}
+		strong {
+			font-size: 24px;
+			color: rgb(0, 0, 0);
+		}
+
+	</style>
+  </head>
+
+  <body>
+	  
+	  <h1>Why is HTML so successful?</h1>
+	  <p>Html is <em>easy</em></p>
+	  <p>Html is <strong>fun</strong></p>
+	  
+  </body>
+
+</html>
+
+
+
+/**
+- 3rd Challenge - Uniqueness:
+
+Steps:
+
+
+A style rule that targets the div has already been created for you. 
+You will need to create the second style rule to target the paragraph
+
+1) Add an id attribute to the < div > element and give it the value " heading" . Our #heading style rule will now target that div
+2) Add an id attribute to the <p> element within the < div > element, give it the value " uppercase"
+3) Create a style rule on line 14 that has an id selector name of #uppercase. This will target our paragraph
+4) Within that rule add a declaration that sets the text-transform property to uppercase
+*/
+
+
+/* Before: */
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Targeting an individual</title>
+      <style>
+        #heading {
+          font-family: Arial;
+          background-color: red;
+          color: white;
+        }
+        /* create your rule here */
+       
+
+      </style>
+    </head>
+    <body>
+
+      <!-- Add the correct id to this element -->
+      <div>
+        
+        <h1>Sporting History</h1>
+        
+        <!-- add the correct id to this element --> 
+        <p>Giants & Heroes</p>
+        
+      </div>
+
+      <h3>Track & Field</h3>
+      <p>
+        Some sporting feats ridicule expectations, fewer violate logic but the rarest of all added a defying of gravity to a hat-trick of achievements. At 3.45pm on 18 October 1968 in Mexico City's Estadio Olmpico Universitario Bob Beamon accomplished all three.
+      </p>
+
+      <h3>Rugby</h3>
+      <p>
+        With the game locked at 10 - 10 with thirty minutes on the clock, a Munster scrum just outside the Biarritz line enabled Peter Stringer to do the unexpected and break on the blindside for an unforgettable try. A moment of sheer brilliance by the Munster and Ireland scrumhalf. The try proved to be crucial as Munster won by 23 - 19 to lift the European Cup in Cardiff.
+      </p>
+      <h3>The first Programmer</h3>
+    <p>
+      Ada Lovelace was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation, and published the first algorithm intended to be carried out by such a machine. As a result, she is sometimes regarded as the first to recognise the full potential of a "computing machine" and the first computer programmer.
+    </p>
+    <h3>The first Compiler</h3>
+    <p>
+      Grace Hopper was an American computer scientist and United States Navy rear admiral. One of the first programmers of the Harvard Mark I computer, she was a pioneer of computer programming who invented one of the first compiler related tools.
+    </p>
+
+    </body>
+</html>
+
+
+/* After: */
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Targeting an individual</title>
+      <style>
+        #heading {
+          font-family: Arial;
+          background-color: red;
+          color: white;
+        }
+        /* create your rule here */
+        #uppercase {
+            text-transform: uppercase;
+        }
+        
+      </style>
+    </head>
+    <body>
+
+      <!-- Add the correct id to this element -->
+      <div id="heading">
+        
+        <h1>Sporting History</h1>
+        
+        <!-- add the correct id to this element --> 
+        <p id="uppercase">Giants & Heroes</p> 
+        
+      </div>
+
+      <h3>Track & Field</h3>
+      <p>
+        Some sporting feats ridicule expectations, fewer violate logic but the rarest of all added a defying of gravity to a hat-trick of achievements. At 3.45pm on 18 October 1968 in Mexico City's Estadio Olmpico Universitario Bob Beamon accomplished all three.
+      </p>
+
+      <h3>Rugby</h3>
+      <p>
+        With the game locked at 10 - 10 with thirty minutes on the clock, a Munster scrum just outside the Biarritz line enabled Peter Stringer to do the unexpected and break on the blindside for an unforgettable try. A moment of sheer brilliance by the Munster and Ireland scrumhalf. The try proved to be crucial as Munster won by 23 - 19 to lift the European Cup in Cardiff.
+      </p>
+      <h3>The first Programmer</h3>
+    <p>
+      Ada Lovelace was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation, and published the first algorithm intended to be carried out by such a machine. As a result, she is sometimes regarded as the first to recognise the full potential of a "computing machine" and the first computer programmer.
+    </p>
+    <h3>The first Compiler</h3>
+    <p>
+      Grace Hopper was an American computer scientist and United States Navy rear admiral. One of the first programmers of the Harvard Mark I computer, she was a pioneer of computer programming who invented one of the first compiler related tools.
+    </p>
+
+    </body>
+</html>
+
+
+
+/*
+- 4th Challenge - Grouping:
+
+Steps: 
+
+
+1) Add a class attribute to the first two <h3> elements and give each of them the attribute value of sports-history
+2) Add a class attribute to the second two <h3> elements and give each of them the attribute value of computing-history
+3) Create a style rule beneath the existing id rules that has a corresponding class selector name of sports-history. This will target our sports content
+4) Within that rule, add a declaration that sets the color property to orange
+5) Create another style rule has a corresponding class selector name of computing-history. This will target our programming content
+6) Within that rule add a declaration that sets the color property to green
+*/
+
+
+/* Before: */
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Lesson 2 Challenge 4</title>
+    <style>
+    	#heading{
+    	  font-family: Arial;
+    	  background-color: red;
+    	  color: white;
+    	}
+      
+        #uppercase {
+          text-transform: uppercase;
+        }
+    	/* Add your class rules here */
+    	
+    	
+    </style>
+  </head>
+  <body>
+
+    <div id="heading">
+     <h1> Sporting History</h1>
+     <p id='uppercase'>
+       Giants & Heroes
+     </p>
+    </div>
+	<!-- add the correct class here -->
+    <h3> Track & Field</h3>
+    <p>
+      Some sporting feats ridicule expectations, fewer violate logic but the rarest of all added a defying of gravity to a hat-trick of achievements. At 3.45pm on 18 October 1968 in Mexico City’s Estadio Olímpico Universitario Bob Beamon accomplished all three.
+    </p>
+	<!-- add the correct class here -->
+   	<h3>Rugby</h3>
+    <p>
+      With the game locked at 10 - 10 with thirty minutes on the clock, a Munster scrum just outside the Biarritz line enabled Peter Stringer to do the unexpected and break on the blindside for an unforgettable try. A moment of sheer brilliance by the Munster and Ireland scrumhalf. The try proved to be crucial as Munster won by 23 - 19 to lift the European Cup in Cardiff.
+    </p>
+    <!-- add the correct class here -->
+    <h3>The first Programmer</h3>
+    <p>
+      Ada Lovelace was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation, and published the first algorithm intended to be carried out by such a machine. As a result, she is sometimes regarded as the first to recognise the full potential of a "computing machine" and the first computer programmer.
+    </p>
+    <!-- add the correct class here -->
+    <h3>The first Compiler</h3>
+    <p>
+      Grace Hopper was an American computer scientist and United States Navy rear admiral. One of the first programmers of the Harvard Mark I computer, she was a pioneer of computer programming who invented one of the first compiler related tools.
+    </p>
+    
+  </body>
+</html>
+
+
+/* After: */
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Lesson 2 Challenge 4</title>
+    <style>
+    	#heading{
+    	  font-family: Arial;
+    	  background-color: red;
+    	  color: white;
+    	}
+      
+        #uppercase {
+          text-transform: uppercase;
+        }
+    	/* Add your class rules here */
+    	.sports-history {
+    	    color: orange;
+    	}
+    	.computing-history {
+    	    color: green;
+    	}
+    </style>
+  </head>
+  <body>
+
+    <div id="heading">
+     <h1> Sporting History</h1>
+     <p id='uppercase'>
+       Giants & Heroes
+     </p>
+    </div>
+	<!-- add the correct class here -->
+    <h3 class="sports-history"> Track & Field</h3>
+    <p>
+      Some sporting feats ridicule expectations, fewer violate logic but the rarest of all added a defying of gravity to a hat-trick of achievements. At 3.45pm on 18 October 1968 in Mexico City’s Estadio Olímpico Universitario Bob Beamon accomplished all three.
+    </p>
+	<!-- add the correct class here -->
+   	<h3 class="sports-history">Rugby</h3>
+    <p>
+      With the game locked at 10 - 10 with thirty minutes on the clock, a Munster scrum just outside the Biarritz line enabled Peter Stringer to do the unexpected and break on the blindside for an unforgettable try. A moment of sheer brilliance by the Munster and Ireland scrumhalf. The try proved to be crucial as Munster won by 23 - 19 to lift the European Cup in Cardiff.
+    </p>
+    <!-- add the correct class here -->
+    <h3 class="computing-history">The first Programmer</h3>
+    <p>
+      Ada Lovelace was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation, and published the first algorithm intended to be carried out by such a machine. As a result, she is sometimes regarded as the first to recognise the full potential of a "computing machine" and the first computer programmer.
+    </p>
+    <!-- add the correct class here -->
+    <h3 class="computing-history">The first Compiler</h3>
+    <p>
+      Grace Hopper was an American computer scientist and United States Navy rear admiral. One of the first programmers of the Harvard Mark I computer, she was a pioneer of computer programming who invented one of the first compiler related tools.
+    </p>
+    
+  </body>
+</html>
